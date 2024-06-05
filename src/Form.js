@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './Form.css'; 
+import './Form.css';
 
 function Form() {
     const [formData, setFormData] = useState({
@@ -18,7 +18,8 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Name: ${formData.name}, Email: ${formData.email}`);
+        // alert(`Name: ${formData.name}, Email: ${formData.email}`);
+        console.log(`Name: ${formData.name}, Email: ${formData.email}`);
     };
 
     return (
